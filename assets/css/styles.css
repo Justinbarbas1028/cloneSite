@@ -21,7 +21,6 @@ nav{
     padding: 20px;
 }
 nav .nav li{
-    padding: 10px;
     list-style: none;
 }
 nav .nav li a{
@@ -29,9 +28,14 @@ nav .nav li a{
     color: var(--color1);
     font-size: var(--large);
 }
+nav .nav li a:hover{
+    background-color: #44f877;
+}
 nav .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 30px;
+    border-radius: 10px;
     background-color: var(--color3);
 }
