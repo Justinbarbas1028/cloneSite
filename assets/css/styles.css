@@ -6,6 +6,7 @@
     --color1: #fff;
     --color2: #000;
     --color3: #12d74a;
+    --color3-2: #82d935;
     --color4: #b8d517;
 
     --small: 16px;
@@ -20,22 +21,79 @@ body{
 nav{
     padding: 20px;
 }
-nav .nav li{
+nav img{
+    width: 200px;
+}
+nav ul li{
     list-style: none;
 }
-nav .nav li a{
+nav ul li .link:active{
+    background-color: var(--color1);
+    color: var(--color1);
+}  
+nav ul li .link{
     text-decoration: none;
     color: var(--color1);
     font-size: var(--large);
+    padding: 10px 15px;
+    border-radius: 10px;
+
+    transition: ease 0.3s;
 }
-nav .nav li a:hover{
-    background-color: #44f877;
+
+nav ul li .link:hover{
+    background-color: var(--color1);
+    color: var(--color3);
 }
+
+nav ul li .link.active{
+    text-decoration: none;
+    color: var(--color3);
+    font-size: var(--large);
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--color1);
+}
+
 nav .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
     border-radius: 10px;
-    background-color: var(--color3);
+    background-image: linear-gradient(var(--color3-2), var(--color3));
+}
+nav .nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchbar{
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: var(--color1);
+}
+.searchbar i{
+    cursor: pointer;
+}
+.searchbar input{
+    margin-left: 10px;
+    font-size: var(--small);
+    border: none;
+    outline: none;
+}
+.slide-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.slide{
+    width: 100%;
+    margin: 0 20px;
+    height: 400px;
+    overflow: hidden;
+}
+.slide img{
+    
 }
