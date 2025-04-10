@@ -84,16 +84,11 @@ nav .nav ul{
     border: none;
     outline: none;
 }
-.slide-wrapper{
-    display: flex;
-    justify-content: center;
+.container{
+    padding: 0 20px;
 }
+
 .slide{
-    width: 100%;
-    margin: 0 20px;
-    height: 400px;
-    overflow: hidden;
-}
-.slide img{
-    
+    display: flex;
+    aspect-ratio: 16/9;
 }
