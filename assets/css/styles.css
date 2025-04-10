@@ -87,8 +87,29 @@ nav .nav ul{
 .container{
     padding: 0 20px;
 }
-
+.slide-wrapper{
+    position: relative;
+    margin: 0 auto;
+}
 .slide{
     display: flex;
-    aspect-ratio: 16/9;
+    aspect-ratio: 400/112;
+    overflow-x: auto;
+    scroll-snap-type: x;
+    scroll-behavior: smooth;
+}
+.slide img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slide-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 }
